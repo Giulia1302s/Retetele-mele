@@ -185,14 +185,16 @@ textarea{resize:vertical;min-height:90px;line-height:1.5}
   <main class="main">
     <!-- MENIU -->
     <div class="page active" id="page-meniu">
-      <div class="page-header" style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;margin-bottom:1.75rem">
-        <div>
-          <h2>Meniul meu</h2>
-          <p>Toate rețetele tale. Selectează-le pentru lista de cumpărături.</p>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
-          <button class="btn-ghost" style="font-size:13px;padding:7px 14px" onclick="exportAll()">↓ Exportă toate</button>
-          <label class="btn-ghost" style="font-size:13px;padding:7px 14px;cursor:pointer;margin:0">↑ Importă<input type="file" accept=".json" style="display:none" onchange="importRecipes(event)"></label>
+      <div class="page-header" style="margin-bottom:1.75rem">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px">
+          <div>
+            <h2>Meniul meu</h2>
+            <p>Toate rețetele tale. Selectează-le pentru lista de cumpărături.</p>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:4px">
+            <button class="btn-ghost" style="font-size:13px;padding:7px 14px;white-space:nowrap" onclick="exportAll()">↓ Exportă toate</button>
+            <label class="btn-ghost" style="font-size:13px;padding:7px 14px;cursor:pointer;margin:0;white-space:nowrap;display:inline-flex;align-items:center">↑ Importă<input type="file" accept=".json" style="display:none" onchange="importRecipes(event)"></label>
+          </div>
         </div>
       </div>
       <div class="filters" id="cat-filters"></div>
